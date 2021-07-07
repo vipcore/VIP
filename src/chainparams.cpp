@@ -55,6 +55,21 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("0x00000b586fcc1602de66f9a2733d0ba9fda25002eaf8f941a15569182c6e6cee"))
     (8, uint256("0x0000004cd8e124bd3281cc348daef1d64044e9fde653686980e7036f3da55b7e"))
+    (500, uint256("0x00000a9172a23465437ef268d1163d94a89b69be4163de16c4565f1c2efc2c47"))
+    (1000, uint256("0x000002a10201a8c5f460f7cfab103555a8526f2761b02945625afa63422af50d"))
+    (1500, uint256("0x000005d2d02a37b10ebf140a7382817ec62e7062fde15378bf2408b537d42843"))
+    (2000, uint256("0x0000017449f20434347fba6cff31c654ee8fc78d11943203908e9a3a27d286e3"))
+    (2500, uint256("0x0000037df3147e6fe2e934063bddee6a833211b9cd6c7d700d6a6d31690b9e98"))
+    (3000, uint256("0x000001a9fd90f6865bcb556aab725b8c0e67646f1b3c4ff15e77eb8df0f80f82"))
+    (3500, uint256("0x000004860f4173b243f564aa2401fa243561ea5cfe7a83c83a1a1a09c169e4b8"))
+    (4000, uint256("0x0000049c991b9883cb2292057ab51ea3650584ffac9a4816fb2d82b42eba19a2"))
+    (4500, uint256("0x000001f72bfa0075006b7fe3612c36bd9a92cc6c179fe30935e4c51c4163875a"))
+    (5000, uint256("0x0000073a01658e9f98690c62e4ae67733b816a13916419ebc0cb89dbaa904f07"))
+    (5500, uint256("0x000004890d0704fd630f181a96eb1de3541162f8c9d4391e928a674d22a04e5a"))
+    (6000, uint256("0x000001b96a3ef466cbebaa210ef48d0cb7c40ea30ddc16912584ab3a667c60c3"))
+    (6500, uint256("0x000002ddde862387c14e29bd35d1ab91995481320b2c8298ef94835f47e3a82d"))
+    (7000, uint256("0x000005ea3e254c47710cbf23c9aa54c6d6ba3976b8b9100bfac9f64df09be496"))
+    (7500, uint256("0x00000362c718f6048f1c39b40ecf9ceedc82de173f3d7d94314e37052312063d"))
     ;
 
     
@@ -163,13 +178,13 @@ public:
         nZerocoinStartTime = 2147483647; // Tuesday, January 19, 2038 3:14:07 AM
 
         // DNS Seeders maintaining a dynamic list of active nodes
-        vSeeds.push_back(CDNSSeedData("vipcore.vip", "seed.vipcore.vip"));      // Primary DNS Seeder, need to have a domain name
-        vSeeds.push_back(CDNSSeedData("95.216.112.67:11945", "95.216.112.67"));
-        vSeeds.push_back(CDNSSeedData("155.138.162.108", "155.138.162.108"));
-        vSeeds.push_back(CDNSSeedData("46.151.159.53", "46.151.159.53"));
-        vSeeds.push_back(CDNSSeedData("82.169.168.31", "82.169.168.31"));
-        vSeeds.push_back(CDNSSeedData("95.216.118.219", "95.216.118.219"));
-        vSeeds.push_back(CDNSSeedData("116.202.172.79", "116.202.172.79"));
+        //vSeeds.push_back(CDNSSeedData("vipcore.vip", "seed.vipcore.vip"));      // Primary DNS Seeder, need to have a domain name
+        vSeeds.push_back(CDNSSeedData("144.202.63.34", "144.202.63.34"));
+        vSeeds.push_back(CDNSSeedData("142.93.115.23", "142.93.115.23"));
+        vSeeds.push_back(CDNSSeedData("77.251.66.21", "77.251.66.21"));
+        //vSeeds.push_back(CDNSSeedData("82.169.168.31", "82.169.168.31"));
+        //vSeeds.push_back(CDNSSeedData("95.216.118.219", "95.216.118.219"));
+        //vSeeds.push_back(CDNSSeedData("116.202.172.79", "116.202.172.79"));
  
         // Base58prefixes Information:  https://en.bitcoin.it/wiki/List_of_address_prefixes      
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 58);   
@@ -271,12 +286,10 @@ public:
         vSeeds.clear();
         
         // Add seeder node information here
-        vSeeds.push_back(CDNSSeedData("vipcore.vip", "seed.vipcore.vip"));      // Primary DNS Seeder, need to have a domain name
-        vSeeds.push_back(CDNSSeedData("51.15.127.79", "51.15.127.79"));
-        vSeeds.push_back(CDNSSeedData("51.15.98.254", "51.15.98.254"));
-        vSeeds.push_back(CDNSSeedData("51.15.37.133", "51.15.37.133"));      
-        vSeeds.push_back(CDNSSeedData("51.15.96.177", "51.15.96.177"));
-        vSeeds.push_back(CDNSSeedData("51.15.112.87", "51.15.112.87"));
+        //vSeeds.push_back(CDNSSeedData("vipcore.vip", "seed.vipcore.vip"));      // Primary DNS Seeder, need to have a domain name
+        vSeeds.push_back(CDNSSeedData("144.202.63.34", "144.202.63.34"));
+        vSeeds.push_back(CDNSSeedData("142.93.115.23", "142.93.115.23"));
+        vSeeds.push_back(CDNSSeedData("77.251.66.21", "77.251.66.21"));
         
         // base58Prefixes information 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125);    
